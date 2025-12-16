@@ -1,0 +1,13 @@
+[project]
+name = "bluesky-cli"
+version = "0.1.0"
+description = "Alpha's Bluesky CLI - post, read, interact from the command line"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "atproto>=0.0.65",
+    "click>=8.0",
+]
+
+[project.scripts]
+bsky = "bluesky_cli.cli:main"
